@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Quicksand:wght@700&family=Raleway:wght@300;600&family=Roboto+Slab:wght@300;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <title>register</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor-encabezado" id="caja1">
+            <div class="logo">
+                <img src="images/logo-mercado-liebre.svg" alt="LOGO"/>
+            </div>
+ 
+           <div class="buscador" id="buscador">
+              <form action="GET" method="get">
+                   <input type="text" name="search" id="barra-buscador" placeholder="Buscar productos, marcas y mas...">
+                   <div class="submit-clickable"> 
+                       <i class="fa fa-search"></i>
+                   </div>
+               </form>
+           </div>
+ 
+           <div class="formas-de-pago">
+              <p>
+                  <i class="fas fa-hand-holding-usd"></i>
+                  Compra en coutas y sin tarjeta de credito
+              </p>
+           </div>
+ 
+       </div>
+ 
+        <div class="navegadores" id="caja2">
+           <a class="nav1">
+               <a href="#">Ofertas</href>
+               <a href="#">Tiendas Oficiales</href>
+               <a href="#">Vender</href>
+               <a href="#">Ayuda</href>
+           </a>     
+           <a class="nav2">
+               <a href="views/register.html"><i class="fas fa-id-card"></i>Crea tu cuenta</href>
+               <a href="views/login.html"><i class="fas fa-sign-in-alt"></i>Ingresar</href>
+               <a href="#"><i class="fas fa-shopping-basket"></i>Mis compras</href>        
+             </a>
+        </div>
+ 
+         <div class="burger-menu" id="menu-hamburguesa">
+             <button class="burger-menu">
+                 <i class="fa fa-bars burger"></i>
+             </button>
+         </div>
+ 
+    </header>
+
+   <main>
+       <h1>¡CREA TU CUENTA!</h1> 
+       <div class="formulario">      
+          
+          <form action="/views/register.html" method="post">
+
+              <label for="nombreC"> Nombre y Apellido:</label>
+               <input type="text" name="Nombre y Apellido">
+
+              <label for="Usuario">Nombre de Usuari@:</label>
+                <input type="text" name="Usuario">
+
+              <label for="FechaDeNac">Fecha de Nacimiento</label>
+                  <input type="text">
+
+              <label for="Domicilio"> Domicilio</label>
+                <input type="text">
+
+              <label for="PerfilUsuar"> Perfil del Usuario</label>
+                 <input type="text">
+        
+              <label for="">Categoria de interes
+
+               Electro
+               
+               Moda
+               
+               Hogar
+              
+               Jugueteria
+              
+               Vida sana
+              
+            </label>
+             <input type="text">
+
+              <label for=""> Contraseña</label>
+                <input type="text">
+
+              <label for="">Confirmar contraseña</label>
+               <input type="text">
+
+             <input type="button" value="">
+             <input type="button" value="">
+              Boton de Enviar que nos lleve a la pagina principal
+              Boton de borrar todos los datos del formulario 
+
+          </form>
+      </div>
+ </main> 
+
+    <footer>
+        <div class="footer-items" id="caja5"></div>
+
+        <div class="items">
+            <div class="icono-item">
+                <i class="fas fa-credit-card"></i>
+            </div>
+            <h5 class="titulo-item">Paga con tarjeta o en efectivo</h5>
+            <p class="descricipcion-item">
+               Con MercadoLiebreCash tenes coutas sin interes con tarjeta o efectivo en puntos de pago.¡Y siempre es seguro!
+            </p>
+        </div>
+
+        <div class="items">
+            <div class="icono-item">
+               <i class="fas fa gift"></i>
+            </div>
+            <h5 class="titulo-item">Envio gratis desde los $ 2.500</h5>
+            <p class="descricipcion-item">
+               Solo por estar regitrad@ en MercadoLiebre tenes envios gratis en miles de productos. Es un beneficio de MercadoPuntos.
+            </p>
+        </div>
+
+        <div class="items">
+            <div class="icono-item">
+                <i class="fas fa-user-shield"></i>
+            </div>
+            <h5 class="titulo-item">Seguridad de pricipio a fin</h5>
+            <p class="descricipcion-item">
+               ¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estas siempre protegid@.
+            </p>
+        </div>
+
+        <div class="items">
+          <p class="Copyright">
+              Copyright © 1999-2020 MercadoLiebre S.R.L.
+          </p>
+        </div>
+        
+    </footer>
+
+</body>
+</html>
