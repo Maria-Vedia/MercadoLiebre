@@ -18,10 +18,11 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
     font-weight: 300;
-    min-width: 250px;
-    margin-bottom: 0px;
-    /*flex-direction: column;
-    justify-content:center;*/
+    
+    margin-bottom: 1px;
+    flex-direction: column;
+    justify-content:center;
+    
 }
 
 /*-------header-----*/
@@ -40,7 +41,7 @@ header {
  flex-wrap: wrap;
  flex-direction: column;
  justify-content: space-between;
- /*align-items: center;*/
+ align-items: center;
  gap: 1em;
 }
 
@@ -50,9 +51,9 @@ header {
  background-position: center;
 }
 
-/*#logo, .buscador {
+#logo, .buscador {
     width: 50%;
-}*/
+}
 
 .buscador {
  position: relative; 
@@ -110,10 +111,7 @@ input{
     height: 40px;
     padding: 10px;
     width: 40px;
-   /* 
-   border: none;
-    margin: none;
-    cursor: pointer;*/
+    cursor: pointer;
 }
 
 /*----banner----*/
@@ -258,6 +256,10 @@ text-align: center;
         max-width: 47%;   
     }
 
+    #img-ban {
+        width: 100%;
+     }
+     
     #imagen {
         position: relative;
     }
@@ -266,16 +268,13 @@ text-align: center;
 @media (min-width:768px) {
     
     header {
+        display: flex;
+        flex-direction:center;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
-        padding-left: 7.5vw;
-        padding-right: 7.5vw;
-        margin: 0 auto;
     }
 
-    .contenedor-encabezado {
-        max-width: 33%;
-        justify-content: space-between;
-    }
     
     #logo {
       max-width:20%;
@@ -291,20 +290,32 @@ text-align: center;
         font-size: 15px;
     }
    
-    .navegadores {
-        display:none;
-        justify-content: space-between; 
-          
+    .navegadores {   
+        display:inline-block;
+        flex-direction: row;
+        justify-content: space-between;       
     }
     
-    .navbar{ 
-        display: flex;
-        font-size: 14px;      
+    .navbar{  
+        font-size: 14px;  
+         
+    }
+
+    .navbar1{
+        text-align:left ;
+    }
+
+    .navbar2{
+        text-align: right;
     }
 
     .burger-menu{
         display: none;
     }
+    #img-ban {
+        width: 100%;
+     }
+     
 
     main{
         display: flex;
@@ -315,8 +326,23 @@ text-align: center;
         max-width: 23%;
     }
 
+    footer {
+        display: flex;
+    }
     .footer-items {
+        
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 1.1em;
+        gap: 1.5em;
+        padding: 1.5em;
+       }
+       
+
+    .items {
         flex-direction: row;
+        justify-content: space-between;
     }
 
 }    

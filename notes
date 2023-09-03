@@ -1,3 +1,50 @@
+
+
+<div class="contenedor-encabezado">
+    <div class="logo" id="logo">
+        <img src = "images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
+    </div>
+
+   <div class="buscador" id="barra-buscador">
+      <form action="GET">
+           <input type="text" placeholder="Buscar productos, marcas y mas...">
+           <button><i class="fas fa-search" id="boton"></i>
+           </button>
+       </form>
+   </div>
+
+   <div class="formas-de-pago">
+      <p>
+          <i class="fas fa-hand-holding-usd"></i>
+          Compra en coutas y sin tarjeta de credito
+      </p>
+   </div>
+</div>
+
+<div class="navegadores">
+  <div class="navbar">
+      <ul class="navbar1">
+           <li><a href="#">Ofertas</a></li>
+           <li><a href="#">Tiendas Oficiales</a></li>
+           <li><a href="#">Vender</a></li>
+           <li><a href="#">Ayuda</a></li>
+       </ul>     
+       <ul class="navbar2">
+           <li><a href="views/register.html">
+             <i class="fas fa-id-card"></i>Crea tu cuenta</a></li>
+           <li><a href="views/login.html">
+             <i class="fas fa-sign-in-alt"></i>Ingresar</a></li>
+          <li><a href="#">
+             <i class="fas fa-shopping-basket"></i>Mis compras</a>  </li>      
+       </ul>
+</div>
+</div>
+
+ <div class="burger-menu">
+     <button class="burger-menu" >
+         <i class="fa fa-bars burger" id="menu-hamburguesa"></i>
+     </button>
+ </div>
 <main>
         <section class="seccion-productos">
 
