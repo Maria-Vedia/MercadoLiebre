@@ -31,13 +31,13 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 .contenedor-encabezado {
- flex-wrap: wrap;
+ display:flex;
+ justify-content: center;
  flex-direction: column;
- justify-content: space-between;
  align-items: center;
  gap: 1em;
 }
@@ -97,18 +97,32 @@ input{
 .burger-menu  {
     display: flex;
     justify-content: center;
+    background-color: #03264c;
+    border-radius: 1em;
+    
 }
 
 #menu-hamburguesa { 
-    background-color: #03264c;
+    
     color: beige;
-    font-size: 2em;
-    border-radius: 5px;
-    border-bottom: black;
-    height: 40px;
+    height: 30px;
     padding: 10px;
-    width: 40px;
-    cursor: pointer;
+    width: 30px;
+    cursor: pointer; 
+  
+    
+}
+
+#barra-buscador{
+    flex-direction: row;
+}
+
+input{
+    border: 0;
+    padding-right: 35px;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px 0 0 5px ; 
 }
 
 /*----banner----*/
@@ -227,9 +241,10 @@ text-align: center;
 @media (min-width: 480px) {
  /*----header---*/
 
-    .contenedor-encabezado {
-        max-width: 33%;
-        gap: 0;
+    .contenedor-encabezado { 
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
 
     } 
 
@@ -250,7 +265,7 @@ text-align: center;
     }
 
     .productoA {
-        max-width: 47%;   
+        max-width: 50%;   
     }
 
     #img-ban {
@@ -268,7 +283,6 @@ text-align: center;
         display: flex;
         flex-direction:center;
         justify-content: space-between;
-        align-items: center;
         width: 100%;
     }
 
@@ -328,7 +342,7 @@ text-align: center;
     }
     .footer-items {
         
-        flex-direction: column;
+        flex-direction:row;
         justify-content: space-between;
         text-align: center;
         margin-bottom: 1.1em;
@@ -338,8 +352,7 @@ text-align: center;
        
 
     .items {
-           
-           justify-content: space-between;
+          justify-content: space-between;
            align-items: flex-start;
            text-align: center;
        }

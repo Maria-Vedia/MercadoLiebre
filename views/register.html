@@ -20,7 +20,7 @@
            <div class="buscador" id="barra-buscador">
               <form action="GET">
                    <input type="text" placeholder="Buscar productos, marcas y mas...">
-                   <button><i class="fas fa-search" id="boton"></i>
+                   <button id="boton"><i class="fas fa-search"></i>
                    </button>
                </form>
            </div>
@@ -60,7 +60,7 @@
        
        <div class="formulario">      
           <h1>¡CREA TU CUENTA!</h1> 
-          <form action="/views/register.html" method="post">
+          <form action="/" method="get">
 
           <div class="caja-input">
               <label for="nombreC">Nombre y Apellido:</label>
@@ -78,27 +78,28 @@
 
           <div class="caja-input">
               <label for="Domicilio">Domicilio</label>
-                <input type="text">
+                <input type="text" name="Domicilio">
           </div>
           <div class="caja-input">
-              <label for="">Contraseña</label>
+              <label for="Contraseña">Contraseña</label>
                 <input type="password">
          </div>
 
          <div class="caja-input">
-              <label for="">Confirmar contraseña</label>
+              <label for="Confirmar contraseña">Confirmar contraseña</label>
                <input type="password">
           </div>
 
          <div class="botones">
-                 <input type="submit" value="Enviar" class="boton" href="index.html">
+                 <input type="submit" value="Enviar" class="boton" href="/index">
           
                  <input type="submit" value="Borrar" class="boton">
 
           </div>
 
             <p>Al registrarte, aceptas nuestras Condicciones de uso y politica de privacidad.</p>
-          <p>¿Ya tienes cuenta? <a class="link" href="login.html">Iniciar Sesion</a></p>
+          <p>¿Ya tienes cuenta? <a class="link" href="/login">Iniciar Sesion</a></p>
+          
         </form>
       </div>
  </main> 
