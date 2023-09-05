@@ -13,7 +13,7 @@ Gris claro: #ebebeb;
 Verde: #39b54a;*/
 
 /*-------body-----*/
-ody {
+body {
     width: 95%;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -62,9 +62,10 @@ header {
     padding: 10px;
     width: 30px;
     cursor: pointer; 
-    
+  
     
 }
+
 
 #barra-buscador{
     flex-direction: row;
@@ -127,6 +128,10 @@ form {
     font-weight: 500;
     text-decoration-color: #fff;
 }
+
+
+
+
 /*-------footer-----*/
 
 footer{
@@ -164,8 +169,7 @@ text-align: center;
 
 @media (min-width: 480px) {
     /*----header---*/
-
-    header {
+     header {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -173,41 +177,27 @@ text-align: center;
         align-items: center;
         padding: 5px;
     }
-    img{
-        
-        width: 70%;
-    }
 
     .contenedor-encabezado { 
-        align-items: center;
         flex-direction: row;
+        justify-content: space-between;
         width: 100%;
     } 
 
     .navegadores {
-           display: none;
-       }
-   
+        display: none;
+    }
+
     .navbar {
-           display: flex;
-           gap:1.5em;
-       }
-       .navegadores {
-           display: none;
-       }
-   
-       .navbar {
-           display: flex;
-           gap:1.5em;
-       }
-   
+        display: flex;
+        gap:1.5em;
+    }
+
        /*------main----*/
-      
 
 }
    
 @media (min-width:768px) {
-       
        
     header {
         display: flex;
@@ -216,10 +206,44 @@ text-align: center;
         width: 100%;
     }
 
-    .contenedor-encabezado {
+    
+    #logo {
+      max-width:20%;
+      cursor: pointer; 
+    }  
+
+    .buscador{
+        max-width: 40%;
+    }
+
+    .formas-de-pago {
+        max-width: 30%;
+        font-size: 15px;
+    }
+   
+    .navegadores {   
+        display:inline-block;
         flex-direction: row;
-        justify-content: space-between;
-       }
+        justify-content: space-between;       
+    }
+    
+    .navbar{  
+        font-size: 14px;  
+         
+    }
+
+    .navbar1{
+        text-align:left ;
+    }
+
+    .navbar2{
+        text-align: right;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+    
 
     #logo {
          max-width:20%;

@@ -245,7 +245,6 @@ text-align: center;
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-
     } 
 
     .navegadores {
@@ -323,6 +322,7 @@ text-align: center;
     .burger-menu{
         display: none;
     }
+    
     #img-ban {
         width: 100%;
      }
