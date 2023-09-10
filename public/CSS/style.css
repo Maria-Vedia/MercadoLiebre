@@ -260,16 +260,34 @@ text-align: center;
     .formas-de-pago {
          width: 80%;
            font-size: 14px;
-       }
+    }
        
 
-    .navegadores {
+    .burger-menu{
         display: none;
     }
 
-    .navbar {
+    .navegadores {   
+        display:flex; 
+        flex-direction: row;
+        font-size: 14px;  
+        justify-content: space-between;
+    }
+          
+    .navbar{
+     
+      margin-top: 1em;
+      gap: 100px;
+    }  
+
+    .navbar-items{
         display: flex;
-        gap:1.5em;
+        gap: 1.5em;
+        
+    }
+
+    a{
+        color: #03264C;
     }
 
     /*------main----*/
@@ -321,16 +339,28 @@ text-align: center;
     }
    
     .navegadores {   
-        display:flex;
+        display:flex; 
         flex-direction: row;
-        justify-content: space-between;   
         font-size: 14px;  
+        justify-content: space-between;
     }
-    
+          
     .navbar{
-       justify-content: space-between;
+     justify-content: space-between;
+      margin-top: 1.2em;
+      gap: 300px;
+    }  
+
+    .navbar-items{
+        display: flex;
+        gap: 1.5em;
+        
     }
 
+    a{
+        color: #03264C;
+    }
+    
     .burger-menu{
         display: none;
     }

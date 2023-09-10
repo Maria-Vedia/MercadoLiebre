@@ -34,11 +34,12 @@ header {
 }
 
 .contenedor-encabezado {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-   }
+ display:flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ gap: 1em;
+}
 
 #logo {
     width: 90%;
@@ -80,8 +81,7 @@ input{
 }
 
 .navegadores {
-    display:none;
-    justify-content: space-around;      
+    display:none;    
 }
 
 
@@ -238,14 +238,32 @@ text-align: center;
            font-size: 14px;
     }
 
-    .navegadores {
-           display: none;
-       }
-   
-    .navbar {
-           display: flex;
-           gap:1.5em;
-       }
+    .navegadores {   
+        display:flex; 
+        flex-direction: row;
+        font-size: 14px;  
+        justify-content: space-between;
+    }
+          
+    .navbar{
+     justify-content: space-between;
+      margin-top: 1.2em;
+      gap: 100px;
+    }  
+
+    .navbar-items{
+        
+        display: flex;
+        gap: 1.5em;
+        
+    }
+    a{
+        color: #03264C;
+    }
+
+    .burger-menu{
+        display: none;
+    }
    
        /*------main----*/
     main{
@@ -266,7 +284,6 @@ text-align: center;
        
     header {
         display: flex;
-        flex-direction:row;
         justify-content: space-between;
         width: 100%;
     }
@@ -286,24 +303,28 @@ text-align: center;
     }
    
     .navegadores {   
-        display:inline-block;
+        display:flex; 
         flex-direction: row;
-        justify-content: space-between;       
+        font-size: 14px;  
+        justify-content: space-between;
+    }
+          
+    .navbar{
+     justify-content: space-between;
+      margin-top: 1.2em;
+      gap: 300px;
+    }  
+    
+    .navbar-items{
+        display: flex;
+        gap: 1.5em;
+        
+    }
+
+    a{
+        color: #03264C;
     }
     
-    .navbar{  
-        font-size: 14px;  
-         
-    }
-
-    .navbar1{
-        text-align:left ;
-    }
-
-    .navbar2{
-        text-align: right;
-    }
-
     .burger-menu{
         display: none;
     }
@@ -312,9 +333,8 @@ text-align: center;
        }
 
     .formulario{
-        margin: auto;
+        margin: 300px;
         width: 500px;
-        margin-top: 150px;
        }
 
     footer {

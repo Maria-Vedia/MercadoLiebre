@@ -16,7 +16,6 @@ body {
 }
 
 /*-------header-----*/
-
 header {
     width: 100%;
     background-color: #EAC926; 
@@ -28,12 +27,12 @@ header {
 }
 
 .contenedor-encabezado {
-
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-   }
+ display:flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ gap: 1em;
+}
 
 #logo {
     width: 100%;
@@ -227,15 +226,32 @@ text-align: center;
            font-size: 14px;
     }
 
-    .navegadores {
+    .navegadores {   
+        display:flex; 
+        flex-direction: row;
+        font-size: 14px;  
+        justify-content: space-between;
+    }
+          
+    .navbar{
+     justify-content: space-between;
+     margin-top: 1.2em;
+     gap: 100px;
+    }  
+
+    .navbar-items{
+        display: flex;
+        gap: 1.5em;
+        
+    }
+
+    a{
+        color: #03264C;
+    }
+    
+    .burger-menu{
         display: none;
     }
-
-    .navbar {
-        display: flex;
-        gap:1.5em;
-    }
-
        /*------main----*/
 
 }
@@ -249,7 +265,6 @@ text-align: center;
         width: 100%;
     }
 
-    
     #logo {
       max-width:20%;
       cursor: pointer; 
@@ -265,69 +280,36 @@ text-align: center;
     }
    
     .navegadores {   
-        display:inline-block;
+        display:flex; 
         flex-direction: row;
-        justify-content: space-between;       
-    }
-    
-    .navbar{  
         font-size: 14px;  
-         
+        justify-content: space-between;
     }
-
-    .navbar1{
-        text-align:left ;
+          
+    .navbar{
+     justify-content: space-between;
+      margin-top: 1.2em;
+      gap: 300px;
+    }  
+    
+    .navbar-items{
+        display: flex;
+        gap: 1.5em;
+        
     }
-
-    .navbar2{
-        text-align: right;
-    }
-
     .burger-menu{
         display: none;
     }
-    
-
-    #logo {
-         max-width:20%;
-         cursor: pointer; 
-    }  
-   
-    .buscador{
-           max-width: 40%;
-       }
-   
-    .formas-de-pago {
-           max-width: 30%;
-           font-size: 15px;
-       }
-      
-    .navegadores {   
-           display:flex;
-           flex-direction: row;
-           justify-content: space-between;       
-           align-items: center;
-       }
-       
-    .navbar{  
-           font-size: 14px;             
-       }
-   
-    .navbar1{
-           text-align:left ;
-       }
-   
-    .navbar2{
-           text-align: right;
-       }
-   
-    .burger-menu{
-           display: none;
-       }
-   
+     
     main{
            display: flex;
     }
+
+    .formulario{
+        margin: 200px;
+        width: 500px;
+       }
+
 
     footer {
         display: flex;
